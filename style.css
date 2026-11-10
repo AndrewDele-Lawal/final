@@ -1,0 +1,155 @@
+/* Page and wrapper */
+
+body {
+    background-color: #101518;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 92%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #161c20;
+}
+
+/* Links */
+
+a {
+    color: #F1C3DD;
+}
+
+a:hover {
+    outline: 2px solid cornflowerblue;
+    outline-offset: 2px;
+}
+
+/* Header and navigation */
+
+.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    background-color: #263037;
+    padding: 1em;
+}
+
+.site-header h1 {
+    font-size: 150%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
+/* Main content */
+
+main {
+    padding: 1em 2em;
+    line-height: 1.5;
+}
+
+main h2 {
+    font-size: 150%;
+    margin-bottom: 0.75em;
+}
+
+/* Home page */
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 2em;
+}
+
+/* How it Works box formatting */
+.steps {
+    background-color: #263037;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.steps ol {
+    margin-left: 1.5em;
+}
+
+/* Reactive web design (Only for home page as of now) */
+@media (max-width: 700px) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: #263037;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
+.hero {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url("images/handle.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 150px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.35;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+
+
+
+/* RESPONSIVE STYLES
+   ========================= */
+
+/* @media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+} */
